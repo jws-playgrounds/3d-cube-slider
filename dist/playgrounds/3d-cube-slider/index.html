@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja" style="--pcdw: 1400; --spdw: 375; --bp: 769;" data-overlayscrollbars-initialize>
+<head>
+  <meta name="robots" content="noindex,nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=aa"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'xxx');
+  </script>
+  <title>3d-cube-slider | JWS Playgrounds</title>
+  <link rel="canonical" href="https://www.jws.work/playgrounds/3d-cube-slider/">
+  <meta name="description" content="フロントエンドアニメーションの作品集。リアルタイムで動作するデモとコードサンプルを通じて、実装の詳細をご紹介します。">
+  <meta property="og:title" content="3d-cube-slider | JWS Playgrounds">
+  <meta property="og:description" content="フロントエンドアニメーションの作品集。リアルタイムで動作するデモとコードサンプルを通じて、実装の詳細をご紹介します。">
+  <meta property="og:url" content="https://www.jws.work/playgrounds/3d-cube-slider/">
+  <meta property="og:image" content="/playgrounds/3d-cube-slider/assets/images/ogp.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="3d-cube-slider | JWS Playgrounds">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="shortcut icon" href="/playgrounds/3d-cube-slider/assets/images/favicon.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" media="print" onload="this.media='all';">
+  <link rel="stylesheet" href="/playgrounds/3d-cube-slider/assets/css/main.css">
+  <script type="module" src="/playgrounds/3d-cube-slider/assets/js/entry.js"></script>
+</head>
+<body class="js-scroll" data-overlayscrollbars-initialize>
+  <div class="l_wrap">
+    <header class="l_header">
+      <div class="l_header_logo"> <a href="https://jws.work/" class="u_flash"> <span class="u_flash_item"> <svg class="c_svg" width="88" height="24" role="img" aria-label="JWS" data-type="vw" style="--pcw:88px;--pch:24px;--spw:65px;--sph:17.5px;">
+              <use href="/playgrounds/3d-cube-slider/assets/svg/logo.svg#logo"></use>
+            </svg> </span> </a> </div>
+      <div class="l_header_gh"> <a class="u_flash" href="https://github.com/jws-playgrounds/3d-cube-slider" target="_blank" rel="noopener noreferrer"> <span class="u_flash_item"> <svg class="c_svg" width="26" height="26" role="img" aria-label="GitHub" data-type="vw" style="--pcw:26px;--pch:26px;--spw:29px;--sph:29px;">
+              <use href="/playgrounds/3d-cube-slider/assets/svg/logo_gh.svg#logo_gh"></use>
+            </svg> </span> </a> </div>
+    </header>
+    <main class="l_main">
+      <div class="bg"> <!-- Slider main container -->
+        <div class="swiper-container"> <!-- Additional required wrapper -->
+          <div class="swiper-wrapper"> <!-- Slides -->
+            <div class="swiper-slide swiper-slide-01"></div>
+            <div class="swiper-slide swiper-slide-02"></div>
+            <div class="swiper-slide swiper-slide-03"></div>
+            <div class="swiper-slide swiper-slide-04"></div>
+          </div> <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="l_footer">©JWS</footer>
+  </div>
+</body>
+</html>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<style>
+:root {
+  --swiper-theme-color: white;
+}
+.bg {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath fill-rule="evenodd" d="M0 0h4v4H0V0zm4 4h4v4H4V4z"/%3E%3C/g%3E%3C/svg%3E');
+  height: calc(var(--vph) * 1px);
+  width: calc(var(--vpw) * 1px);
+  position: relative;
+  background-color: darkcyan;
+}
+.swiper-container {
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.swiper-slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.swiper-slide-01 {
+  background-image: url('https://assets.codepen.io/4788040/1.jpg');
+}
+.swiper-slide-02 {
+  background-image: url('https://assets.codepen.io/4788040/2.jpg');
+}
+.swiper-slide-03 {
+  background-image: url('https://assets.codepen.io/4788040/3.jpg');
+}
+.swiper-slide-04 {
+  background-image: url('https://assets.codepen.io/4788040/4.jpg');
+}
+.swiper-button-prev {
+  left: -80px;
+}
+.swiper-button-next {
+  right: -80px;
+}
+
+</style>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script defer>
+const swiper = new Swiper('.swiper-container', {
+  effect: 'cube',
+  grabCursor: true,
+  loop: true,
+  cubeEffect: {
+    slideShadows: true,
+  },
+  autoplay: {
+    delay: 2000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
